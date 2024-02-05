@@ -8,9 +8,9 @@ const Header = () => {
   const isSmallScreen = useMediaQuery({ maxWidth: 784 });
 
   return (
-    <Box bg='#020817' w='100%' h='100px' p={4} color='#fffafa'>
+    <Box bg='#020817' w='100%' h='70px' p={2} color='#fffafa'>
         <Flex >
-            <Flex fontSize='5xl' pl={6} textTransform={'uppercase'} className='logo' justify={'space-between'} align={'center'}><FaCode/>Cindy<FaCode/></Flex>
+            <Flex fontSize='3xl' pl={6} textTransform={'uppercase'} className='logo' justify={'space-between'} align={'center'} color='#69b0ef'><FaCode/>Cindy<FaCode/></Flex>
             <Spacer/>
             <Flex pr={9} w='30%' justify={'space-between'} align={'center'} fontWeight='bold'>
               <Text fontSize='2xl'><Link href='./'>{isSmallScreen ? <FaHome style={{fontSize: "40px"}}/> : 'Home'}</Link></Text>
