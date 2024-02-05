@@ -1,0 +1,5 @@
+@use './placeHolder';
+
+.logo{
+    @extend %logo;    
+}

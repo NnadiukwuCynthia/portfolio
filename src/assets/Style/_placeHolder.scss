@@ -1,0 +1,7 @@
+@use './font' as font;
+
+%logo{
+    font-family: font.$logo-font;
+    font-size: 50px;
+  
+}
