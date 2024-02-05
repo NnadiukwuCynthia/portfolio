@@ -10,7 +10,7 @@ const Home = () => {
             Cynthia Nnadiukwu
         </Text>
         <Text color='#fffafa' fontSize='25px' fontWeight='bold' noOfLines={[1, 2, 3, 4, 5]} mr='20px'>
-            Hello... Let's code away...
+            Turning caffeine into code, one pixel at a time!!
         </Text>    
         <Stack
           direction='row'

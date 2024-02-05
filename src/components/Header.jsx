@@ -13,7 +13,7 @@ const Header = () => {
             <Flex fontSize='3xl' pl={6} textTransform={'uppercase'} className='logo' justify={'space-between'} align={'center'} color='#69b0ef'><FaCode/>Cindy<FaCode/></Flex>
             <Spacer/>
             <Flex pr={9} w='30%' justify={'space-between'} align={'center'} fontWeight='bold'>
-              <Text fontSize='2xl'><Link href='./'>{isSmallScreen ? <FaHome style={{fontSize: "40px"}}/> : 'Home'}</Link></Text>
+              <Text fontSize='2xl'><Link href='./Home.jsx'>{isSmallScreen ? <FaHome style={{fontSize: "40px"}}/> : 'Home'}</Link></Text>
               <Text fontSize='2xl'><Link href='./'>{isSmallScreen ? <MdWifiCalling3 style={{fontSize: "40px"}}/> : 'Contact Me'}</Link></Text>
               <Text fontSize='2xl'><Link href='./'>{isSmallScreen ? <GrAchievement style={{fontSize: "30px"}}/> : 'Projects'}</Link></Text>
             </Flex>
