@@ -4,9 +4,9 @@ import { LuGithub } from "react-icons/lu";
 
 const Home = () => {
   return (
-    <Flex w='100%' h='630px' justify='center' align='center' m='0 auto 20px' bg='#1e293b'>
-        <Box w='45%'>
-        <Text fontSize='60px' color='#69b0ef' fontWeight='bold'>
+    <Flex w='100%' h='630px' justify='center' align='center' m='0 auto 20px' bg='#000000' pt='30px'>
+        <Box w='50%' pl='10rem'>
+        <Text fontSize='40px' color='lawngreen' fontWeight='bold'>
             Cynthia Nnadiukwu
         </Text>
         <Text color='#fffafa' fontSize='25px' fontWeight='bold' noOfLines={[1, 2, 3, 4, 5]} mr='20px'>
@@ -21,15 +21,15 @@ const Home = () => {
           width='100%'
           mt='20px'
         >
-          <Button _hover={{}} p={5} w='20%' bg='#3b82f6' variant='solid' leftIcon={<MdOutlineMailOutline style={{fontSize: "28px"}}/>} fontSize='18px'>
+          <Button _hover={{}} p={5} w='26%' bg='lawngreen' variant='solid' leftIcon={<MdOutlineMailOutline style={{fontSize: "28px"}}/>} fontSize='18px'>
             <Link href="mailto:cynthiaamaran@gmail.com">Contact Me</Link>
           </Button>
-          <Button _hover={{color:'black', bg:'white', transition:'1s'}} w='15%' bg='#1e293b' color='#ffffff' variant='solid' leftIcon={<LuGithub style={{fontSize: "28px"}}/> } boxShadow="xl" fontSize='18px'><Link href='https://github.com/NnadiukwuCynthia' isExternal>Github</Link></Button>
+          <Button _hover={{color:'lawngreen', border:'1px', transition:'.50s'}} w='19%' bg='#000000' color='#ffffff' variant='solid' leftIcon={<LuGithub style={{fontSize: "28px"}}/> } boxShadow="xl" fontSize='18px'><Link href='https://github.com/NnadiukwuCynthia' isExternal>Github</Link></Button>
         </Stack>
         
         </Box>
-        <Box w='40%'>
-            <Image src='../../myImage.jpg' alt='Dan Abramov' h='400px' w='100%' borderRadius='10%' borderWidth='5px' borderColor='black' borderStyle='dashed'/>
+        <Box w='40%' >
+            <Image src='../../myImage.png' alt='Dan Abramov' h='550px' w='76%' borderRadius='xl' borderWidth='5px' borderColor='black' borderStyle='dashed'/>
         </Box>
     </Flex>
   )
