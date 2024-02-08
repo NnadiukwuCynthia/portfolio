@@ -3,6 +3,7 @@ import { useMediaQuery } from 'react-responsive';
 import { FaHome, FaCode } from "react-icons/fa";
 import { MdWifiCalling3 } from "react-icons/md";
 import { GrAchievement } from "react-icons/gr";
+import { GiStrong } from "react-icons/gi";
 
 const Header = () => {
   const isSmallScreen = useMediaQuery({ maxWidth: 784 });
@@ -14,8 +15,9 @@ const Header = () => {
             <Spacer/>
             <Flex pr={9} w='30%' justify={'space-between'} align={'center'} fontWeight='bold'>
               <Text fontSize='xl'><Link href='./Home.jsx'>{isSmallScreen ? <FaHome style={{fontSize: "40px"}}/> : 'Home'}</Link></Text>
-              <Text fontSize='xl'><Link href='./'>{isSmallScreen ? <MdWifiCalling3 style={{fontSize: "40px"}}/> : 'Contact Me'}</Link></Text>
+              <Text fontSize='xl'><Link href='./Home.jsx'>{isSmallScreen ? <GiStrong style={{fontSize: "40px"}}/> : 'Skills'}</Link></Text>
               <Text fontSize='xl'><Link href='./'>{isSmallScreen ? <GrAchievement style={{fontSize: "30px"}}/> : 'Projects'}</Link></Text>
+              <Text fontSize='xl'><Link href='./'>{isSmallScreen ? <MdWifiCalling3 style={{fontSize: "40px"}}/> : 'Contact Me'}</Link></Text>
             </Flex>
         </Flex>
     </Box>
