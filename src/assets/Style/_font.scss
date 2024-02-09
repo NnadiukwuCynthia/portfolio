@@ -3,4 +3,9 @@
     src: url(../Fonts/Lobster_Two/LobsterTwo-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'Exo 2';
+    src: url(../Fonts/Exo_2/Exo2-VariableFont_wght.ttf);
+}
 $logo-font: 'Lobster Two', sans-serif;
+$body-font: 'Exo 2', sans-serif;
