@@ -2,6 +2,8 @@ import { ChakraBaseProvider, extendBaseTheme, theme as chakraTheme, Box } from '
 import Header from './components/Header';
 import Home from './components/Home';
 import Skills from './components/Skills';
+import Projects from './components/Projects';
+import About from './components/About';
 
 
 const { Button } = chakraTheme.components
@@ -19,6 +21,8 @@ function App () {
       <Header/>
       <Home/>
       <Skills/>
+      <About/>
+      <Projects/>
       </Box>
     </ChakraBaseProvider>
   )
