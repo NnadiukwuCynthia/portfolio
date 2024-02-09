@@ -3,4 +3,9 @@
     src: url(../Fonts/Lobster_Two/LobsterTwo-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'Roboto';
+    src: url(../Fonts/Roboto/Roboto-Medium.ttf);
+}
 $logo-font: 'Lobster Two', sans-serif;
+$body-font: 'Roboto', sans-serif;

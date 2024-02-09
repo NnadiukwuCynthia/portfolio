@@ -1,0 +1,12 @@
+@use 'placeholder';
+
+.about{
+    &__aboutDetails{
+        @extend %body-font;
+    }
+}
+.skills{
+    Text{
+        @extend %body-font;
+    }
+}
