@@ -4,7 +4,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Projects = () => {
     return (
-        <Box mt='7rem' textAlign='center'>
+        <Box textAlign='center'>
             <Text align='center' mb='3rem' textTransform='uppercase' fontSize='50px' fontWeight='bold' color='white'>My Projects</Text>
             <Flex justify='center' align='center' w='100%' wrap='wrap'>
             <Box w='27%' h='auto' m='30px' pb='40px' borderRadius='xl' bg='#1e1e1e'>

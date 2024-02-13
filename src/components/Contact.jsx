@@ -8,7 +8,7 @@ const Contact = () => {
 
   const isError = input === ''
   return (
-        <Box m='5rem auto 0'>
+        <Box m='auto'>
             <Text mb='3rem' textTransform='uppercase' fontSize='50px' fontWeight='bold' color='white' align='center'>Contact Me</Text>
     
         <Flex justify='center' w='100%'>
@@ -17,7 +17,7 @@ const Contact = () => {
         </Flex>
         <FormControl  w='40%' m='20px 10px' py='30px' borderRadius='xl' boxShadow='-1px 2px 10px #1d1d20' bg='#171718'>
             <FormLabel p='20px 30px 5px' textTransform='uppercase' color='grey'>Name</FormLabel>
-            <Input mx='30px' w='90%' h='3rem' bg='#1d1d20' color='white' px='20px' fontWeight='bold' type='text' value={input} onChange={handleInputChange}/>
+            <Input mx='30px' w='90%' h='3rem' bg='#1d1d20' color='white' px='20px' fontWeight='bold' border='1px solid #171718' boxShadow='xl' type='text' value={input} onChange={handleInputChange}/>
             {!isError ? (
             <FormHelperText color='white' px='30px'>
                 Enter Correct Mail Address.

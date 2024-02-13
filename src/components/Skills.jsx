@@ -2,7 +2,7 @@ import {  Flex, Stack, Text, Image} from "@chakra-ui/react"
 
 const Skills = () => {
   return (
-    <Flex justify={'center'} align={'center'} direction={'column'} width='100%' pb='40px' mt='50px' bg='#1e1e1e'>
+    <Flex justify={'center'} align={'center'} direction={'column'} width='100%' pb='40px'>
         <Text mb='3rem' textTransform='uppercase' fontSize='50px' fontWeight='bold' color='white'>My Skills</Text>
         <Flex justify={'space-between'} align={'center'}  width='80%'>
             <Stack width='31%' height='300px' bg='#1e293b' borderRadius='xl'>
