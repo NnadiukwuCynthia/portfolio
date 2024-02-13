@@ -4,7 +4,7 @@ import { LuGithub } from "react-icons/lu";
 
 const Home = () => {
   return (
-    <Flex w='100%' h='630px' justify='center' align='center' m='0 auto 20px' bg='#000000' pt='30px'>
+    <Flex w='100%' h='100vh' justify='center' align='center' m='auto' bg='#000000' pt='30px'>
         <Box w='50%' pl='10rem'>
         <Text fontSize='40px' color='lawngreen' fontWeight='bold'>
             Cynthia Nnadiukwu
