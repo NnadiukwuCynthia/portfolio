@@ -5,12 +5,12 @@ import Header from "./Header"
 
 const Root = () => {
   return (
-    <>
+    <Box bg='black'>
     <Box>
        <Header/>
     </Box>
     <Outlet/>
-    </>
+    </Box>
   )
 }
 
