@@ -1,8 +1,0 @@
-@use './placeHolder';
-
-.logo{
-    @extend %logo;    
-}
-a{
-    @extend %body-font;   
-}
