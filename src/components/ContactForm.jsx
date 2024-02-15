@@ -66,9 +66,10 @@ const ContactForm = () => {
         } else {
             setSubjectError('');
         }
-    
+        
         if (isValid) {
-            let mailBody = mailBody;
+            let mailBody = ''; 
+            mailBody += mailBody;
             mailBody += `\n\nSender's Name: ${name}\nPhone Number: ${phoneNumber}`;   
          
         emailjs.send('service_898atuf', 'template_qyk8imr', {
