@@ -12,9 +12,9 @@ const Header = () => {
   const isSmallScreen = useMediaQuery({ maxWidth: 600 });
 
   return (
-      <Box bg='#000000e5' w='100%' h='90px' color='crimson' boxShadow='xl' pos='fixed' p='1rem 3rem' zIndex='10' className='Header'>
+      <Box bg='#000000e5' w='100%' h='90px' color='crimson' boxShadow='xl' pos='fixed' p='1rem 3rem' zIndex='10'>
           <Flex className='Header__Flex'>
-              <Flex fontFamily='Roboto' fontWeight='bold' fontSize='3xl' textTransform='uppercase' className='Header__Flex__logo' justify='space-between' align='center'>
+              <Flex fontFamily='Protest Riot' fontWeight='bold' fontSize='3xl' textTransform='uppercase' justify='space-between' align='center'>
                   <FaCode />Cynthia<FaCode />
               </Flex>
               <Spacer />
@@ -34,7 +34,7 @@ const Header = () => {
                               <DrawerContent bg='#000000' color='wheat' pt='4rem'>
                                   <DrawerCloseButton bg='none' color='crimson' fontSize='20px' p='30px'/>
                                   <DrawerBody>
-                                      <Flex direction='column' className='menu'>
+                                      <Flex direction='column' className='menu' fontFamily='Roboto'>
                                           <MenuLink to='/' text='Home' icon={FaHome} isOpen={isOpen} />
                                           <MenuLink to='/about' text='About Me' icon={FaInfo} isOpen={isOpen} />
                                           <MenuLink to='/skill' text='Skills' icon={GiStrong} isOpen={isOpen} />
@@ -47,7 +47,7 @@ const Header = () => {
                       </Drawer>
                   </>
               ) : (
-                  <Flex pr={9} w='40%' justify='space-between' align='center' fontWeight='bold' className='Header__Flex__menu'>
+                  <Flex fontFamily='Roboto' pr={9} w='40%' justify='space-between' align='center' fontWeight='bold'>
                       <MenuLink to='/' text='Home' icon={FaHome} isOpen={isOpen} />
                       <MenuLink to='/about' text='About Me' icon={FaInfo} isOpen={isOpen} />
                       <MenuLink to='/skill' text='Skills' icon={GiStrong} isOpen={isOpen} />
