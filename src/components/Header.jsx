@@ -35,11 +35,11 @@ const Header = () => {
                                   <DrawerCloseButton bg='none' color='crimson' fontSize='20px' p='30px'/>
                                   <DrawerBody>
                                       <Flex direction='column' className='menu' fontFamily='Roboto'>
-                                          <MenuLink to='/' text='Home' icon={FaHome} isOpen={isOpen} />
-                                          <MenuLink to='/about' text='About Me' icon={FaInfo} isOpen={isOpen} />
-                                          <MenuLink to='/skill' text='Skills' icon={GiStrong} isOpen={isOpen} />
-                                          <MenuLink to='/project' text='Projects' icon={GrAchievement} isOpen={isOpen} />
-                                          <MenuLink to='/contact' text='CONTACT ME' icon={MdWifiCalling3} isOpen={isOpen} />
+                                          <MenuLink to='/' text='Home' icon={FaHome} isOpen={isOpen} onClose={onClose} />
+                                          <MenuLink to='/about' text='About Me' icon={FaInfo} isOpen={isOpen} onClose={onClose}/>
+                                          <MenuLink to='/skill' text='Skills' icon={GiStrong} isOpen={isOpen} onClose={onClose}/>
+                                          <MenuLink to='/project' text='Projects' icon={GrAchievement} isOpen={isOpen} onClose={onClose}/>
+                                          <MenuLink to='/contact' text='CONTACT ME' icon={MdWifiCalling3} isOpen={isOpen} onClose={onClose}/>
                                       </Flex>
                                   </DrawerBody>
                               </DrawerContent>
@@ -60,12 +60,18 @@ const Header = () => {
   );
 }
 
-const MenuLink = ({ to, text, icon, isOpen }) => {
+const MenuLink = ({ to, text, icon, isOpen, onClose }) => {
   const isSmallScreen = useMediaQuery({ maxWidth: 1286 });
 
+  const handleClick = () => {
+    if (isOpen) {
+      onClose();
+    }
+  };
+
   return (
-      <Text fontSize='xl' className='Header__Flex__menu__text'>
-          <Link as={ReactRouterLink} to={to}>
+      <Text fontSize='xl' mb='20px'>
+          <Link as={ReactRouterLink} to={to} onClick={handleClick}>
               {isOpen ? text : (
                   !isSmallScreen && text
               )}
@@ -80,6 +86,7 @@ MenuLink.propTypes = {
   text: PropTypes.string.isRequired,
   icon: PropTypes.object,
   isOpen: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
 };
 
 export default Header;
