@@ -16,7 +16,7 @@ const Home = () => {
     direction={{base: "column", sm: "column", md: "column", lg: "row"}}
     >
         <Box w={{ base: "100%", sm: "100%", md: "80%", lg: "40%" }} display='flex' justifyContent='center'>
-            <Image src='../../myImage.png' alt='Dan Abramov'  h={{ base: "350px", sm: "400px", md: "400px", lg: "550px" }} w={{ base: "40%", sm: "40%", md: "50%", lg: "80%" }} borderRadius='xl' borderWidth='5px' borderColor='black' borderStyle='dashed'/>
+            <Image src='../../myImage.png' alt='Dan Abramov'  h={{ base: "400px", sm: "400px", md: "400px", lg: "550px" }} w={{ base: "50%", sm: "50%", md: "50%", lg: "80%" }} borderRadius='xl' borderWidth='5px' borderColor='black' borderStyle='dashed'/>
         </Box>
         <Box w={{ base: "100%", sm: "100%", md: "75%", lg: "40%" }} display='flex' justifyContent='center' px='10px'>
         <Box>
